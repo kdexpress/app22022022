@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.get('/api/env', async (req, res) => {
 
     const sqlString = process.env.SQLCONNSTR_connstr
-    
+
     const env = JSON.stringify(process.env)
     res.send(env)
    
@@ -21,7 +21,7 @@ app.get('/api/hello', async (req, res) => {
 
 app.get('/api/merhaba', (req, res) => {
 
-    res.send('Merhaba Dünya')
+    res.send('Merhaba Dünyalı')
 })
 
 app.post('/api/name', (req, res) => {
